@@ -1,7 +1,8 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 	<Frame name="TransmogShardTrackerFrame" hidden="false" parent="TokenFrame" setAllPoints="true">
 		<Frames>
-			<Frame name="TransmogShardTrackerFrame" enableMouse="true">
+			<!-- <Frame name="TransmogShardTrackerFrame" enableMouse="true"> -->
+			<Button name="TransmogShardTrackerButton" >
 				<Size>
 					<AbsDimension x="32" y="32"/>
 				</Size>
@@ -45,7 +46,7 @@
 					<OnUpdate function="TransmogShardTracker_OnUpdate"/>
 					<OnClick function="TransmogShardTracker_OnClick"/>
 				</Scripts>
-			</Frame>
+			</Button>
 		</Frames>
 	</Frame>
 </Ui>
