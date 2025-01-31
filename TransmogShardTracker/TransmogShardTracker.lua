@@ -71,7 +71,7 @@ end
 
 function TransmogShardTracker_OnClick(self)
 	-- print("TransmogShardTracker_OnClick")
-	func_query_start()
+	SendChatMessage(".t s", "WHISPER", nil, PlayerName)
 end
 
 
