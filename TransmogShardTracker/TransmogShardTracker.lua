@@ -121,4 +121,7 @@ function func_query_start()
 	SendChatMessage(".t s", "WHISPER", nil, PlayerName)
 end
 
-
+-- public query function of shard status
+function TransmogShardTracker_Query()
+	return TransmogShardTrackerCharDB["Shards_current"], TransmogShardTrackerCharDB["Shards_maximum"]
+end
