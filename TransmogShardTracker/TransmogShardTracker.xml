@@ -16,13 +16,13 @@
 					<Layer level="BACKGROUND">
 						<Texture parentKey="texture" file="Interface\Icons\Inv_enchant_shardgleamingsmall">
 							<Size>
-								<AbsDimension x="32" y="32"/>
+								<AbsDimension x="22" y="22"/>
 							</Size>
 							<Anchors>
-								<Anchor point="RIGHT"/>
+								<Anchor point="CENTER"/>
 							</Anchors>
 						</Texture>
-						<FontString parentKey="text" inherits="GameFontNormal" justifyH="RIGHT" spacing="4">
+						<FontString parentKey="text" text="Shards TEMP|n|cffffffff123/4400" inherits="GameFontNormal" justifyH="RIGHT" spacing="4">
 							<Anchors>
 								<Anchor point="RIGHT" relativePoint="LEFT">
 									<Offset>
@@ -37,12 +37,13 @@
 					<OnLoad function="TransmogShardTracker_OnLoad"/>
 					<OnEnter>
 						GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT", 5, 40);
-						GameTooltip:SetText(self.tooltip);
+						GameTooltip:SetText(self.tooltip or "Error: No Text");
 					</OnEnter>
 					<OnLeave>
 						GameTooltip:Hide();
 					</OnLeave>
 					<OnUpdate function="TransmogShardTracker_OnUpdate"/>
+					<OnClick function="TransmogShardTracker_OnClick"/>
 				</Scripts>
 			</Frame>
 		</Frames>
