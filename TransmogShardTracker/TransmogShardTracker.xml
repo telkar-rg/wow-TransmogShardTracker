@@ -45,6 +45,7 @@
 					</OnLeave>
 					<OnUpdate function="TransmogShardTracker_OnUpdate"/>
 					<OnClick function="TransmogShardTracker_OnClick"/>
+					<OnEvent function="TransmogShardTracker_OnEvent"/>
 				</Scripts>
 			</Button>
 		</Frames>
