@@ -1,0 +1,3 @@
+local ADDON_NAME, ADDON_TABLE = ...
+
+
