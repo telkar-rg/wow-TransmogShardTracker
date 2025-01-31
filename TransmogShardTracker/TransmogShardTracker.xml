@@ -1,17 +1,50 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
 	<Frame name="TransmogShardTrackerFrame" hidden="false" parent="TokenFrame" setAllPoints="true">
-		<Layers>
-			<Layer>
-				<FontString name="$parentString" text="SoIx|n123/4000" inherits="GameFontNormal" justifyH="RIGHT" spacing="4">
-					<Anchors>
-						<Anchor point="RIGHT" relativePoint="TOPRIGHT">
-							<Offset>
-								<AbsDimension x="-40" y="-55"/>
-							</Offset>
-						</Anchor>
-					</Anchors>
-				</FontString>
-			</Layer>
-		</Layers>
+		<Frames>
+			<Frame name="TransmogShardTrackerFrame" enableMouse="true">
+				<Size>
+					<AbsDimension x="32" y="32"/>
+				</Size>
+				<Anchors>
+					<Anchor point="RIGHT" relativePoint="TOPRIGHT">
+						<Offset>
+							<AbsDimension x="-40" y="-55"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture parentKey="texture" file="Interface\Icons\Inv_enchant_shardgleamingsmall">
+							<Size>
+								<AbsDimension x="32" y="32"/>
+							</Size>
+							<Anchors>
+								<Anchor point="RIGHT"/>
+							</Anchors>
+						</Texture>
+						<FontString parentKey="text" inherits="GameFontNormal" justifyH="RIGHT" spacing="4">
+							<Anchors>
+								<Anchor point="RIGHT" relativePoint="LEFT">
+									<Offset>
+										<AbsDimension x="-3" y="1"/>
+									</Offset>
+								</Anchor>
+							</Anchors>
+						</FontString>
+					</Layer>
+				</Layers>
+				<Scripts>
+					<OnLoad function="TransmogShardTracker_OnLoad"/>
+					<OnEnter>
+						GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT", 5, 40);
+						GameTooltip:SetText(self.tooltip);
+					</OnEnter>
+					<OnLeave>
+						GameTooltip:Hide();
+					</OnLeave>
+					<OnUpdate function="TransmogShardTracker_OnUpdate"/>
+				</Scripts>
+			</Frame>
+		</Frames>
 	</Frame>
 </Ui>
