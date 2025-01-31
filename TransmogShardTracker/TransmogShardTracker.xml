@@ -2,11 +2,11 @@
 	<Frame name="TransmogShardTrackerFrame" hidden="false" parent="TokenFrame" setAllPoints="true">
 		<Layers>
 			<Layer>
-				<FontString name="$parentString" text="Shards of illusionX" inherits="GameFontNormal" justifyH="RIGHT" spacing="4">
+				<FontString name="$parentString" text="SoIx|n123/4000" inherits="GameFontNormal" justifyH="RIGHT" spacing="4">
 					<Anchors>
-						<Anchor point="TOPRIGHT">
+						<Anchor point="RIGHT" relativePoint="TOPRIGHT">
 							<Offset>
-								<AbsDimension x="-10" y="-10"/>
+								<AbsDimension x="-40" y="-55"/>
 							</Offset>
 						</Anchor>
 					</Anchors>
