@@ -36,10 +36,7 @@
 				</Layers>
 				<Scripts>
 					<OnLoad function="TransmogShardTracker_OnLoad"/>
-					<OnEnter>
-						GameTooltip:SetOwner(self, "ANCHOR_BOTTOMRIGHT", 5, 40);
-						GameTooltip:SetText(self.tooltip or "Error: No Text");
-					</OnEnter>
+					<OnEnter function="TransmogShardTracker_OnEnter"/>
 					<OnLeave>
 						GameTooltip:Hide();
 					</OnLeave>
