@@ -1,7 +1,7 @@
+## Title: Transmog Shard Tracker |cFF40FFFF|HTMT|hv1.2|h|r (Rising-Gods)
 ## Interface: 30300
-## Title: Transmog Shard Tracker v1.1 (Rising-Gods)
 ## Author: Telkar-RG
-## Version: 1.1
+## Version: 1.2
 ## Notes: Keeps track of |cff66bbffShards of Illusion|ron the Rising-Gods realm.
 ## Notes-deDE: Zeichnet |cff66bbffSplitter der Illusion|r am Rising-Gods Realm auf.
 ## SavedVariablesPerCharacter: TransmogShardTrackerCharDB
